@@ -5,28 +5,27 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
+    return Scaffold(     
       body: Stack(
         children: [
           Align(
-            alignment: Alignment.topCenter, // Alinha o conteúdo ao topo
+            alignment: Alignment.topCenter, 
             child: Container(
-              alignment: Alignment.center, // Alinha o conteúdo ao centro horizontalmente      
+              alignment: Alignment.center,      
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center, // Alinha o conteúdo ao centro horizontalmente
-                  mainAxisAlignment: MainAxisAlignment.center, // Centraliza verticalmente dentro do espaço disponível
+                  crossAxisAlignment: CrossAxisAlignment.center, 
+                  mainAxisAlignment: MainAxisAlignment.center, 
                   children: <Widget>[
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.center, // Alinha os containers horizontalmente no centro
+                      mainAxisAlignment: MainAxisAlignment.center, 
                       children: <Widget>[
                         Column(
-                          mainAxisAlignment: MainAxisAlignment.center, // Alinha os containers verticalmente no centro
+                          mainAxisAlignment: MainAxisAlignment.center, 
                           children: <Widget>[
                             Container(
                               width: 35,
                               height: 35,
-                              margin: EdgeInsets.all(2), // Espaço entre os containers
+                              margin: EdgeInsets.all(2), 
                               decoration: BoxDecoration(
                                 color: Colors.red,
                                 borderRadius: BorderRadius.circular(50),
@@ -35,11 +34,11 @@ class HomePage extends StatelessWidget {
                             Container(
                               width: 45,
                               height: 45,
-                              margin:const EdgeInsets.all(2), // Espaço entre os containers
+                              margin:const EdgeInsets.all(2), 
                               decoration: const BoxDecoration(
                                 color: Colors.green,
                                 borderRadius: BorderRadius.only(
-                                  bottomLeft: Radius.circular(50), // Bordas arredondadas apenas na parte inferior
+                                  bottomLeft: Radius.circular(50), 
                                 ),
                               ),
                             ),
@@ -48,24 +47,24 @@ class HomePage extends StatelessWidget {
                         Container(
                           width: 45,
                           height: 95,
-                          margin:const EdgeInsets.all(2), // Espaço entre os containers
+                          margin:const EdgeInsets.all(2), 
                           decoration:const BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(40),
                               topRight: Radius.circular(40),
-                            ), // Bordas arredondadas em todos os cantos
+                            ),
                           ),
                         ),
                       ],
                     ),
-                    SizedBox(height: 20), // Espaço entre os containers e os textos
+                    SizedBox(height: 20), 
                     Text(
                       'Get your Money\nUnder Control',
                       style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(height: 10), // Espaço entre os textos
+                    SizedBox(height: 10), 
                     Text(
                       'Manage your expenses\nSeamlessly',
                       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
@@ -77,9 +76,9 @@ class HomePage extends StatelessWidget {
             ),
           
           Align(
-            alignment: Alignment.bottomCenter, // Alinha os botões ao fundo
+            alignment: Alignment.bottomCenter, 
             child: Column(
-              mainAxisSize: MainAxisSize.min, // Ajusta a altura da coluna para o tamanho dos botões
+              mainAxisSize: MainAxisSize.min, 
               children: [
                 Container(
                   width: 300,
