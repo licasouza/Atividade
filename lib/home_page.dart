@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
                               height: 35,
                               margin: EdgeInsets.all(2), 
                               decoration: BoxDecoration(
-                                color: Colors.red,
+                                color: Colors.blue,
                                 borderRadius: BorderRadius.circular(50),
                               ),
                             ),
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                               height: 45,
                               margin:const EdgeInsets.all(2), 
                               decoration: const BoxDecoration(
-                                color: Colors.green,
+                                color: Colors.blue,
                                 borderRadius: BorderRadius.only(
                                   bottomLeft: Radius.circular(50), 
                                 ),
