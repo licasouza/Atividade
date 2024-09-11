@@ -75,7 +75,7 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white),
+                        color: Colors.grey),
                     textAlign: TextAlign.center,
                     selectionColor: Colors.white,
                   ),
@@ -98,7 +98,7 @@ class HomePage extends StatelessWidget {
                   child: const Center(
                       child: Text(
                     'Sign Up with Email ID',
-                    selectionColor: Colors.white,
+                    style: TextStyle(color: Colors.white),
                   )),
                 ),
                 const SizedBox(height: 10),
